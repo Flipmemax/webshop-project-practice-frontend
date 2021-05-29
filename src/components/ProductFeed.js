@@ -13,8 +13,10 @@ export default function ProductFeed() {
   const products = useSelector(selectProductsFetched);
 
   useEffect(() => {
-    dispatch(fetchProducts);
-  }, [dispatch]);
+    if (!products.length) {
+      dispatch(fetchProducts);
+    }
+  }, [dispatch, products.length]);
 
   return (
     <div>

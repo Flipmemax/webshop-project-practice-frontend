@@ -3,7 +3,12 @@ import "../App.css";
 
 export default function NavBar() {
   return (
-    <div style={{ display: "flex" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-evenly",
+      }}
+    >
       <div style={{ margin: 20, marginTop: 5 }}>
         <NavLink
           to="/"
