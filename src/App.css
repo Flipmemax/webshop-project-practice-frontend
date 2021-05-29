@@ -3,7 +3,7 @@
   color: rgb(212, 211, 211);
   text-align: center;
   min-height: 100vh;
-  max-height: 100vh;
+  min-width: 100vw;
 }
 
 .Applink {
