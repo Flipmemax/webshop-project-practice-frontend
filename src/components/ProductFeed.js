@@ -25,13 +25,15 @@ export default function ProductFeed() {
           {products.map((product) => {
             return (
               <div key={product.id}>
-                <h3>{product.name}</h3>
-                <div>
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="ImgStyle"
-                  />
+                <div className="flexContainer">
+                  <div className="BoxStyle">
+                    <h3>{product.name}</h3>
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="ImgStyle"
+                    />
+                  </div>
                 </div>
               </div>
             );
